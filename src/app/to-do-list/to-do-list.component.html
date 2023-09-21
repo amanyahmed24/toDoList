@@ -1,0 +1,7 @@
+<div class="list py-4" >
+  <h2 class="text-center text-secondary mt-4">Lets get some work done!</h2>
+  <div *ngFor="let task of taskArr">
+
+    <app-to-do-item [taskN]="task" ></app-to-do-item>
+  </div>
+</div>

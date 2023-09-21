@@ -1,0 +1,6 @@
+<div>
+  <app-to-do-form (firedFromChild)="holdTaskName($event)"></app-to-do-form>
+  <div>
+    <app-to-do-list [taskArr]="taskArr" ></app-to-do-list>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="item p-3">
+  <div class="container" *ngIf="Display">
+    <button class="btn btn-outline-primary" (click)="completeFunc()">
+      Complete
+    </button>
+    <button class="btn btn-outline-primary" (click)="deleteFunc()">
+      delete
+    </button>
+    <span [ngStyle]="{'text-decoration': dashed ? 'line-through' : 'none' }">{{
+      taskN
+    }}</span>
+  </div>
+</div>

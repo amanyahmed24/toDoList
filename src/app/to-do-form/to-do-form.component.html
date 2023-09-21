@@ -1,0 +1,18 @@
+<div class="to-do-form bg-primary text-white">
+  <div class="container">
+    <h1 class="text-end">To-Do App!</h1>
+    <p class="text-end mt-4">Add New To-Do</p>
+    <input
+      type="text"
+      placeholder="Enter new task"
+      class="p-2"
+      (keyup)="saveTask($event)"
+    />
+    <button
+      class="btn btn-outline-light d-block ms-auto mt-3 py-2 px-5"
+      (click)="sendToParent()"
+    >
+      Add
+    </button>
+  </div>
+</div>
