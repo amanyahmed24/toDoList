@@ -9,7 +9,7 @@ export class ToDoFormComponent {
    task:string="" ;
   saveTask(e :any){
    this.task = e.target.value;
-    console.log(this.task);
+  
   }
   @Output() firedFromChild = new EventEmitter();
 
